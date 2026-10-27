@@ -1,0 +1,28 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "2.5",
+	"FriendlyName": "Anim Mod Tool",
+	"Description": "Anim Mod Tool",
+	"Category": "Animation",
+	"CreatedBy": "Attaku",
+	"CreatedByURL": "https://bitbucket.org/rmfixtool/rmfixtool",
+	"DocsURL": "",
+	"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/product/298f68da04b9401297b798a4d58bee6a",
+	"SupportURL": "",
+	"EngineVersion": "5.6.0",
+	"CanContainContent": true,
+	"Installed": true,
+	"Modules": [
+		{
+			"Name": "AnimModToolEditor",
+			"Type": "Editor",
+			"LoadingPhase": "PostEngineInit",
+			"PlatformAllowList": [
+				"Win64",
+				"Mac",
+				"Linux"
+			]
+		}
+	]
+}
