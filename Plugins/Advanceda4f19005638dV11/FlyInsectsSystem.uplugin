@@ -1,0 +1,30 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.7.7",
+	"FriendlyName": "FlyInsectsSystem",
+	"Description": "Fly Insects System",
+	"Category": "BitProtectStudio",
+	"CreatedBy": "Taueron",
+	"CreatedByURL": "https://www.fab.com/sellers/BitProtectStudio",
+	"DocsURL": "https://docs.google.com/document/d/1fe6tKYPY6iZieG5BRP97w2A41KxDx6XyufGih837hz4/edit?usp=sharing",
+	"MarketplaceURL": "",
+	"SupportURL": "https://discord.gg/DN4PhbmShg",
+	"EngineVersion": "5.6.0",
+	"CanContainContent": true,
+	"Installed": true,
+	"Modules": [
+		{
+			"Name": "FlyInsectsSystem",
+			"Type": "Runtime",
+			"LoadingPhase": "Default",
+			"PlatformAllowList": [
+				"Win64",
+				"Android",
+				"Mac",
+				"IOS",
+				"Linux"
+			]
+		}
+	]
+}
