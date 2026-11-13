@@ -1,4 +1,4 @@
-﻿// Copyright BMK Games LLC. All Rights Reserved.
+// Copyright BMK Games LLC. All Rights Reserved.
 
 #pragma once
 
@@ -156,8 +156,8 @@ struct PathNode
 	}
 
 	bool bVisited = false;			// Have we searched this node before?
-	double fGlobalGoal = INFINITY;	// Distance to goal so far
-	double fLocalGoal = INFINITY;	// Distance to goal if we took the alternative route
+	double fGlobalGoal = TNumericLimits<double>::Max();	// Distance to goal so far
+	double fLocalGoal = TNumericLimits<double>::Max();	// Distance to goal if we took the alternative route
 	TSharedPtr<FSurfaceNavPointBase> NavPoint;	// Ref to associated nav point
 	PathNode* parent = nullptr;		// Node connecting to this node that offers shortest parent
 };
