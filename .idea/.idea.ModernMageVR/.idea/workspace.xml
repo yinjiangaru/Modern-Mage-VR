@@ -19,28 +19,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="61c86ad4-568f-4a68-a968-03efcc913868" name="更改" comment="">
-      <change beforePath="$PROJECT_DIR$/Config/DefaultEditor.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEditor.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Config/DefaultEngine.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEngine.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Config/DefaultGameplayTags.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultGameplayTags.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/VRShootZombie/Blueprints/3DUI/BP_Loading3DUI.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/VRShootZombie/Blueprints/3DUI/BP_Loading3DUI.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/VRShootZombie/Blueprints/AI/AIBase/BP_AIBase.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/VRShootZombie/Blueprints/AI/AIBase/BP_AIBase.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/VRShootZombie/Blueprints/AI/AIBase/BP_AIBaseController.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/VRShootZombie/Blueprints/AI/AIBase/BP_AIBaseController.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/VRShootZombie/Blueprints/AI/BP_Damage.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/VRShootZombie/Blueprints/AI/BP_Damage.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/VRShootZombie/Blueprints/AI/RemoteAttackAI/BP_AIGun.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/VRShootZombie/Blueprints/AI/RemoteAttackAI/BP_AIGun.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/VRShootZombie/Blueprints/AI/RemoteAttackAI/BP_RemoteAttackZombie01.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/VRShootZombie/Blueprints/AI/RemoteAttackAI/BP_RemoteAttackZombie01.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/VRShootZombie/Blueprints/AI/StateTree/ST_CloseCombat.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/VRShootZombie/Blueprints/AI/StateTree/ST_CloseCombat.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/VRShootZombie/Blueprints/AI/StateTree/ST_RemoteAttack.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/VRShootZombie/Blueprints/AI/StateTree/ST_RemoteAttack.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/VRShootZombie/Blueprints/AI/StateTree/ST_RemoteAttack_Gun.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/VRShootZombie/Blueprints/AI/StateTree/ST_RemoteAttack_Gun.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/VRShootZombie/Blueprints/AI/StateTree/Task/Attack/STT_RemoteAttack_Gun.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/VRShootZombie/Blueprints/AI/StateTree/Task/Attack/STT_RemoteAttack_Gun.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/VRShootZombie/Blueprints/InteractiveObjects/Weapon/BP_GunBase.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/VRShootZombie/Blueprints/InteractiveObjects/Weapon/BP_GunBase.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/VRShootZombie/Blueprints/Player/BP_LoadingVRPlayer.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/VRShootZombie/Blueprints/Player/BP_LoadingVRPlayer.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/VRShootZombie/Blueprints/Player/BP_RifleryGameMode.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/VRShootZombie/Blueprints/Player/BP_RifleryGameMode.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/VRShootZombie/Blueprints/Player/BP_VRPlayer.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/VRShootZombie/Blueprints/Player/BP_VRPlayer.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/VRShootZombie/Level/TestAILevel.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/VRShootZombie/Level/TestAILevel.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/VRShootZombie/Level/TestGrabGunLevel.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/VRShootZombie/Level/TestGrabGunLevel.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/VRShootZombie/Level/TestGunLevel.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/VRShootZombie/Level/TestGunLevel.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/VRShootZombie/Level/UILevel.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/VRShootZombie/Level/UILevel.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/VRShootZombie/UI/LoadingUI.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/VRShootZombie/UI/LoadingUI.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ModernMageVR/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ModernMageVR/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ModernMageVR/ModernMageVR.Build.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ModernMageVR/ModernMageVR.Build.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

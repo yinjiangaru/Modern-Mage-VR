@@ -7,14 +7,51 @@ public class ModernMageVR : ModuleRules
 	public ModernMageVR(ReadOnlyTargetRules Target) : base(Target)
 	{
 		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
-	
-		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore" });
 
-		PrivateDependencyModuleNames.AddRange(new string[] { "MassAIBehavior","MassEntity","StateTreeModule", "MassCommon","MassNavigation", "MassSpawner", "MassMovement","MassRepresentation","MassLOD","MassSignals","AnimToTexture" });
+		PublicDependencyModuleNames.AddRange(new string[]
+		{
+			"Core",
+			"CoreUObject",
+			"Engine",
+			"InputCore",
+			"EnhancedInput",
+			"AIModule",
+			"StateTreeModule",
+			"GameplayStateTreeModule",
+			"UMG",
+			"Slate",
+
+			"MassCrowd",
+			"MassEntity",
+			"MassActors",
+			"MassCommon",
+			"MassLOD",
+
+			"MassMovement",
+			"MassNavigation",
+			"MassZoneGraphNavigation",
+			"MassReplication",
+
+			"MassSignals",
+			"MassSimulation",
+			"MassSpawner",
+			"MassRepresentation",
+
+			"MassAIReplication",
+			"MassAIBehavior",
+			
+			"NavigationSystem",
+			"MassNavMeshNavigation",
+			"NavCorridor",
+			"AnimToTexture",
+
+			"AIModule",
+			"GameplayTags",
+		});
 
 		// Uncomment if you are using Slate UI
 		// PrivateDependencyModuleNames.AddRange(new string[] { "Slate", "SlateCore" });
-		
+
 		// Uncomment if you are using online features
 		// PrivateDependencyModuleNames.Add("OnlineSubsystem");
 
