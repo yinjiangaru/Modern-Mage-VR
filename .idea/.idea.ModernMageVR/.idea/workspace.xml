@@ -19,8 +19,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="61c86ad4-568f-4a68-a968-03efcc913868" name="更改" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ModernMageVR/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ModernMageVR/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ModernMageVR/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ModernMageVR/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ModernMageVR/ModernMageVR.Build.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ModernMageVR/ModernMageVR.Build.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/VRShootZombie/Blueprints/Player/BP_VRPlayer.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/VRShootZombie/Blueprints/Player/BP_VRPlayer.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/VRShootZombie/Mesh/Zombie/Zombie/Mesh/SKEL_Zombie.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/VRShootZombie/Mesh/Zombie/Zombie/Mesh/SKEL_Zombie.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ModernMageVR.uproject" beforeDir="false" afterPath="$PROJECT_DIR$/ModernMageVR.uproject" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ModernMageVR/TestMass/Tasks/RealTimePathFollowTask.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ModernMageVR/TestMass/Tasks/RealTimePathFollowTask.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

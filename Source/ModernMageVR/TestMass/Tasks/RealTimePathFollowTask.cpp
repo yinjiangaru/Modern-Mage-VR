@@ -73,7 +73,7 @@ EStateTreeRunStatus FRealtimePathFollowTask::Tick(FStateTreeExecutionContext& Co
 	const float DesiredSpeed = FMath::Min(BaseSpeed * InstanceData.SpeedScale, MovementParams.MaxSpeed);
 	const float DistanceToGoal = FVector::Distance(PathEndLocation, AgentLocation);
 
-	//ÐÞ¸ÄÑ°Â·£¬Ôö¼Ó±ÜÕÏ
+	//ï¿½Þ¸ï¿½Ñ°Â·ï¿½ï¿½ï¿½ï¿½ï¿½Ó±ï¿½ï¿½ï¿½
 	if (PathPoints.Num() > 1)
 	{
 		FVector NextWayPoint = PathPoints[1].Location;
