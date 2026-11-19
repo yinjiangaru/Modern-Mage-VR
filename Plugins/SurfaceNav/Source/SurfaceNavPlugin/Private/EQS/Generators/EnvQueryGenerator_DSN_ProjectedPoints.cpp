@@ -24,8 +24,8 @@ FVector UEnvQueryGenerator_DSN_ProjectedPoints::DetermineProjectedLocation(FSurf
 		ProjectedLocation = GridPoint->GetAvgLocation();
 	else if (ProjectionData.TraceMode == ESurfaceNavEnvQueryTrace::ClosestSurface)
 	{
-		FVector ClosestLoc(MAX_flt);
-		float ClosestDistSq = MAX_flt;
+		FVector ClosestLoc(UE_BIG_NUMBER);
+		float ClosestDistSq = UE_BIG_NUMBER;
 		FVector CompareTo = GridPoint->WorldLocation;
 
 		for (TPair<FIntVector, TSharedPtr<FSurfaceNavPointBase>>& NavPointPair : GridPoint->NavPoints)
@@ -42,15 +42,15 @@ FVector UEnvQueryGenerator_DSN_ProjectedPoints::DetermineProjectedLocation(FSurf
 				ClosestLoc = CurLoc;
 			}
 		}
-		if (ClosestDistSq == MAX_flt)
+		if (ClosestDistSq == UE_BIG_NUMBER)
 			ClosestLoc = CompareTo;
 
 		ProjectedLocation = FNavLocation(ClosestLoc);
 	}
 	else if (ProjectionData.TraceMode == ESurfaceNavEnvQueryTrace::CheapestSurface)
 	{
-		FVector CheapestLoc(MAX_flt);
-		float CheapestCost = MAX_flt;
+		FVector CheapestLoc(UE_BIG_NUMBER);
+		float CheapestCost = UE_BIG_NUMBER;
 
 		//UNavArea* DefaultNavArea = FNavigationSystem::GetDefaultWalkableArea().GetDefaultObject()->StaticClass();
 		const UNavArea* DefaultAreaOb = static_cast<const UNavArea*>(FNavigationSystem::GetDefaultWalkableArea().GetDefaultObject());
@@ -72,7 +72,7 @@ FVector UEnvQueryGenerator_DSN_ProjectedPoints::DetermineProjectedLocation(FSurf
 					continue;
 
 				FVector CurLoc = NavPoint->WorldLocation;
-				float CurCost = MAX_flt;
+				float CurCost = UE_BIG_NUMBER;
 
 				// This should already be the default object
 				UNavArea* CurNavArea = NavPoint->NavArea;

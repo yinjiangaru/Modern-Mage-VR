@@ -305,7 +305,7 @@ void FSurfaceNavPath::DebugDraw(const ANavigationData* NavData, FColor PathColor
 float FSurfaceNavPath::GetCostFromIndex(int32 PathPointIndex) const
 {
 	if (!IsValid())
-		return MAX_flt;
+		return UE_BIG_NUMBER;
 
 	const uint32 StartIndex = PathPointIndex + 1;
 	if (StartIndex >= (uint32)PathPoints.Num())

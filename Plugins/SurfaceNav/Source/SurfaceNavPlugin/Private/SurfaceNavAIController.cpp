@@ -99,7 +99,7 @@ FVector ASurfaceNavAIController::GetRandomReachableSurfaceNavPointNearby(float S
 
 float ASurfaceNavAIController::GetClosestPlanetActor(AActor*& PlanetActor)
 {
-	float result = MAX_flt;
+	float result = UE_BIG_NUMBER;
 
 	auto NavSystem = FNavigationSystem::GetCurrent<USurfaceNavigationSystem>(GetWorld());
 

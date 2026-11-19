@@ -1289,7 +1289,7 @@ bool USurfaceNavigationSystem::ProjectPointToNavigation(const FVector& Point, co
 
 float USurfaceNavigationSystem::FindClosestPlanet(const AActor* CurrentActor, AActor*& PlanetActor)
 {
-	float ClosestDistSq = MAX_flt;
+	float ClosestDistSq = UE_BIG_NUMBER;
 
 	if (CurrentActor)
 		return FindClosestPlanet(CurrentActor->GetActorLocation(), PlanetActor);
@@ -1299,7 +1299,7 @@ float USurfaceNavigationSystem::FindClosestPlanet(const AActor* CurrentActor, AA
 
 float USurfaceNavigationSystem::FindClosestPlanet(const FVector& InLocation, AActor*& PlanetActor)
 {
-	float ClosestDistSq = MAX_flt;
+	float ClosestDistSq = UE_BIG_NUMBER;
 
 	if (!SurfaceNavProxySettings::IsFlatWorld)
 	{
@@ -1333,7 +1333,7 @@ float USurfaceNavigationSystem::FindClosestPlanet(const FVector& InLocation, AAc
 			}
 		}
 
-		if (ClosestDistSq < MAX_flt && TempPlanetActor)
+		if (ClosestDistSq < UE_BIG_NUMBER && TempPlanetActor)
 			PlanetActor = TempPlanetActor;
 	}
 
@@ -2480,7 +2480,7 @@ void USurfaceNavigationSystem::QueueBlocksNearInvokers()
 
 		// Need to track closest player so we can determine what percentage to use for calculating
 		// the radius for block generation
-		float closestPlayerDistSq = SurfaceNavProxySettings::AllowNavigationGenerationWithoutPlayer ? 0.f : MAX_flt;
+		float closestPlayerDistSq = SurfaceNavProxySettings::AllowNavigationGenerationWithoutPlayer ? 0.f : UE_BIG_NUMBER;
 
 		// Make sure the invoker is within the max range of the player.
 		// We're not taking the generation radius into account, but may want
@@ -5910,7 +5910,7 @@ TSharedPtr<FSurfaceNavPointBase> USurfaceNavigationSystem::FindClosestNavPointTo
 	// Let's find the closest Nav Point to the location
 	TSharedPtr<FSurfaceNavPointBase> ClosestNavPoint = nullptr;
 
-	double ClosestNavPointDist = MAX_flt;
+	double ClosestNavPointDist = UE_BIG_NUMBER;
 	int counter = 0;
 
 	for (const TPair<FSurfaceNavBlock*, float>& ClosestBlockPair : BlockDistances)
@@ -6321,11 +6321,11 @@ inline void USurfaceNavigationSystem::DetermineCheaperNavPoint(TSharedPtr<FSurfa
 	{
 		auto NavPointNeighborFilterArea = FilterClass->Areas.FindByPredicate([NavPointNeighbor](const FNavigationFilterArea& NavFilterArea) { return NavFilterArea.AreaClass.GetDefaultObject() == NavPointNeighbor->NavArea; });
 		if (NavPointNeighborFilterArea)
-			NavPointNeighborCost = NavPointNeighborFilterArea->bIsExcluded ? MAX_flt : NavPointNeighborFilterArea->TravelCostOverride;
+			NavPointNeighborCost = NavPointNeighborFilterArea->bIsExcluded ? UE_BIG_NUMBER : NavPointNeighborFilterArea->TravelCostOverride;
 
 		auto CheapestNavPointFilterArea = FilterClass->Areas.FindByPredicate([CheapestNavPoint](const FNavigationFilterArea& NavFilterArea) { return NavFilterArea.AreaClass.GetDefaultObject() == CheapestNavPoint->NavArea; });
 		if (CheapestNavPointFilterArea)
-			CheapestNavPointCost = CheapestNavPointFilterArea->bIsExcluded ? MAX_flt : CheapestNavPointFilterArea->TravelCostOverride;
+			CheapestNavPointCost = CheapestNavPointFilterArea->bIsExcluded ? UE_BIG_NUMBER : CheapestNavPointFilterArea->TravelCostOverride;
 	}
 
 	if (NavPointNeighborCost < CheapestNavPointCost&& NavPointNeighbor->GetAngleFromGround() >= MinAngleFromGround &&
@@ -6699,8 +6699,8 @@ inline void USurfaceNavigationSystem::PathingIterateNavPointNeighbor(TSharedPtr<
 		{
 			if (NavFilterArea->bIsExcluded)
 			{
-				DefaultCost = MAX_flt;
-				FixedAreaEnteringCost = MAX_flt;
+				DefaultCost = UE_BIG_NUMBER;
+				FixedAreaEnteringCost = UE_BIG_NUMBER;
 			}
 			else
 			{
@@ -6830,7 +6830,7 @@ inline bool USurfaceNavigationSystem::FindRandomNavPointNearby_Original(FSurface
 	int kBlock = startZ;
 
 	TSharedPtr<FSurfaceNavPointBase> CheapestRandomNavPoint = nullptr;
-	float CheapestCost = MAX_flt;
+	float CheapestCost = UE_BIG_NUMBER;
 
 	bool AcceptCurrentValue = false;
 
@@ -6902,8 +6902,8 @@ inline bool USurfaceNavigationSystem::FindRandomNavPointNearby_Original(FSurface
 										{
 											if (NavFilterArea->bIsExcluded)
 											{
-												NavPointCost = MAX_flt;
-												FixedAreaEnteringCost = MAX_flt;
+												NavPointCost = UE_BIG_NUMBER;
+												FixedAreaEnteringCost = UE_BIG_NUMBER;
 											}
 											else
 											{
