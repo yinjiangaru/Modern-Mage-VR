@@ -296,7 +296,7 @@ void UBTTask_SurfaceNavMoveTo::OnTaskFinished(UBehaviorTreeComponent& OwnerComp,
 
 		MyMemory->BBObserverDelegateHandle.Reset();
 	}
-
+	
 	Super::OnTaskFinished(OwnerComp, NodeMemory, TaskResult);
 }
 
